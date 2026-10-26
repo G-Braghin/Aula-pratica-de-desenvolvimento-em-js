@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de E-mail</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="caixa">
+      <h1>Validador de E-mail</h1>
+      <p>Digite seu e-mail para verificar se ele está no formato correto.</p>
+      <form id="formulario" novalidate>
+        <label for="email">E-mail</label>
+        <input
+          type="text"
+          id="email"
+          placeholder="exemplo@email.com"
+          autocomplete="email"
+        />
+        <p id="mensagem" aria-live="polite">
+          O e-mail deve conter um nome, @ e um domínio.
+        </p>
+        <div class="botoes">
+          <button type="submit">Verificar</button>
+          <button type="button" id="limpar">Limpar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
